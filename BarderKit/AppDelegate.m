@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DemoViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,9 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     self.window.backgroundColor = UIColor.whiteColor;
-    UIStoryboard *board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    self.window.rootViewController = [board instantiateInitialViewController];
+    DemoViewController *demoVC = [[DemoViewController alloc] init];
+    UINavigationController *demoNav = [[UINavigationController alloc] initWithRootViewController:demoVC];
+    self.window.rootViewController = demoNav;
     [self.window makeKeyAndVisible];
+    UINavigationBar.appearance.translucent = NO;
     return YES;
 }
 

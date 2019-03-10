@@ -13,6 +13,18 @@
 		08605F1422041CBC005FB487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08605F1322041CBC005FB487 /* Assets.xcassets */; };
 		08605F1722041CBC005FB487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08605F1522041CBC005FB487 /* LaunchScreen.storyboard */; };
 		08605F1A22041CBC005FB487 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F1922041CBC005FB487 /* main.m */; };
+		08605F24220422A2005FB487 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F22220422A2005FB487 /* MBProgressHUD.m */; };
+		08605F29220422AC005FB487 /* NSString+IsEmptyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F27220422AB005FB487 /* NSString+IsEmptyString.m */; };
+		08605F2A220422AC005FB487 /* MBProgressHUD+MEShowHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F28220422AB005FB487 /* MBProgressHUD+MEShowHUD.m */; };
+		08605F2F220424D7005FB487 /* UIStoryboard+CreateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F2D220424D7005FB487 /* UIStoryboard+CreateVC.m */; };
+		08605F3622042B0F005FB487 /* BKDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F3522042B0F005FB487 /* BKDeviceTool.m */; };
+		08605F3922042CA4005FB487 /* UIAlertController+MEShowAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 08605F3822042CA4005FB487 /* UIAlertController+MEShowAlert.m */; };
+		08BD3F822233FE9F0058A538 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD3F812233FE9F0058A538 /* DemoViewController.m */; };
+		08BD3F852234016A0058A538 /* DeviceToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD3F842234016A0058A538 /* DeviceToolViewController.m */; };
+		08BD3F88223401980058A538 /* ShowTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD3F87223401980058A538 /* ShowTipViewController.m */; };
+		08BD3F8B2234AD6A0058A538 /* LHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD3F892234AD6A0058A538 /* LHTextField.m */; };
+		08BD3F8E2234AEBB0058A538 /* LHTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD3F8D2234AEBB0058A538 /* LHTextFieldView.m */; };
+		08BD3F912234BB610058A538 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BD3F902234BB610058A538 /* TextFieldViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,33 @@
 		08605F1622041CBC005FB487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08605F1822041CBC005FB487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08605F1922041CBC005FB487 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08605F22220422A2005FB487 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		08605F23220422A2005FB487 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		08605F25220422AB005FB487 /* MBProgressHUD+MEShowHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MEShowHUD.h"; sourceTree = "<group>"; };
+		08605F26220422AB005FB487 /* NSString+IsEmptyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IsEmptyString.h"; sourceTree = "<group>"; };
+		08605F27220422AB005FB487 /* NSString+IsEmptyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IsEmptyString.m"; sourceTree = "<group>"; };
+		08605F28220422AB005FB487 /* MBProgressHUD+MEShowHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MEShowHUD.m"; sourceTree = "<group>"; };
+		08605F2B220423DD005FB487 /* BarderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarderKit.h; sourceTree = "<group>"; };
+		08605F2D220424D7005FB487 /* UIStoryboard+CreateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+CreateVC.m"; sourceTree = "<group>"; };
+		08605F2E220424D7005FB487 /* UIStoryboard+CreateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+CreateVC.h"; sourceTree = "<group>"; };
+		08605F3122042777005FB487 /* BKHeightHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKHeightHeader.h; sourceTree = "<group>"; };
+		08605F3222042967005FB487 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		08605F3422042B0F005FB487 /* BKDeviceTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKDeviceTool.h; sourceTree = "<group>"; };
+		08605F3522042B0F005FB487 /* BKDeviceTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKDeviceTool.m; sourceTree = "<group>"; };
+		08605F3722042CA4005FB487 /* UIAlertController+MEShowAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+MEShowAlert.h"; sourceTree = "<group>"; };
+		08605F3822042CA4005FB487 /* UIAlertController+MEShowAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+MEShowAlert.m"; sourceTree = "<group>"; };
+		08BD3F802233FE9F0058A538 /* DemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		08BD3F812233FE9F0058A538 /* DemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		08BD3F832234016A0058A538 /* DeviceToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceToolViewController.h; sourceTree = "<group>"; };
+		08BD3F842234016A0058A538 /* DeviceToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceToolViewController.m; sourceTree = "<group>"; };
+		08BD3F86223401980058A538 /* ShowTipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowTipViewController.h; sourceTree = "<group>"; };
+		08BD3F87223401980058A538 /* ShowTipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowTipViewController.m; sourceTree = "<group>"; };
+		08BD3F892234AD6A0058A538 /* LHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHTextField.m; sourceTree = "<group>"; };
+		08BD3F8A2234AD6A0058A538 /* LHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHTextField.h; sourceTree = "<group>"; };
+		08BD3F8C2234AEBB0058A538 /* LHTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHTextFieldView.h; sourceTree = "<group>"; };
+		08BD3F8D2234AEBB0058A538 /* LHTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHTextFieldView.m; sourceTree = "<group>"; };
+		08BD3F8F2234BB610058A538 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		08BD3F902234BB610058A538 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +97,13 @@
 		08605F0922041CBA005FB487 /* BarderKit */ = {
 			isa = PBXGroup;
 			children = (
+				08BD3F7F2233FE0A0058A538 /* TestDemo */,
+				08605F2B220423DD005FB487 /* BarderKit.h */,
+				08605F3322042A50005FB487 /* BKTools */,
+				08605F3022042723005FB487 /* BKHeader */,
+				08605F2C22042441005FB487 /* Views */,
+				08605F20220420C7005FB487 /* BKCategories */,
+				08605F2122042258005FB487 /* ThirdParty */,
 				08605F0A22041CBA005FB487 /* AppDelegate.h */,
 				08605F0B22041CBA005FB487 /* AppDelegate.m */,
 				08605F0D22041CBA005FB487 /* ViewController.h */,
@@ -67,8 +113,76 @@
 				08605F1522041CBC005FB487 /* LaunchScreen.storyboard */,
 				08605F1822041CBC005FB487 /* Info.plist */,
 				08605F1922041CBC005FB487 /* main.m */,
+				08605F3222042967005FB487 /* PrefixHeader.pch */,
 			);
 			path = BarderKit;
+			sourceTree = "<group>";
+		};
+		08605F20220420C7005FB487 /* BKCategories */ = {
+			isa = PBXGroup;
+			children = (
+				08605F3722042CA4005FB487 /* UIAlertController+MEShowAlert.h */,
+				08605F3822042CA4005FB487 /* UIAlertController+MEShowAlert.m */,
+				08605F25220422AB005FB487 /* MBProgressHUD+MEShowHUD.h */,
+				08605F28220422AB005FB487 /* MBProgressHUD+MEShowHUD.m */,
+				08605F2E220424D7005FB487 /* UIStoryboard+CreateVC.h */,
+				08605F2D220424D7005FB487 /* UIStoryboard+CreateVC.m */,
+				08605F26220422AB005FB487 /* NSString+IsEmptyString.h */,
+				08605F27220422AB005FB487 /* NSString+IsEmptyString.m */,
+			);
+			path = BKCategories;
+			sourceTree = "<group>";
+		};
+		08605F2122042258005FB487 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				08605F23220422A2005FB487 /* MBProgressHUD.h */,
+				08605F22220422A2005FB487 /* MBProgressHUD.m */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		08605F2C22042441005FB487 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08BD3F8A2234AD6A0058A538 /* LHTextField.h */,
+				08BD3F892234AD6A0058A538 /* LHTextField.m */,
+				08BD3F8C2234AEBB0058A538 /* LHTextFieldView.h */,
+				08BD3F8D2234AEBB0058A538 /* LHTextFieldView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08605F3022042723005FB487 /* BKHeader */ = {
+			isa = PBXGroup;
+			children = (
+				08605F3122042777005FB487 /* BKHeightHeader.h */,
+			);
+			path = BKHeader;
+			sourceTree = "<group>";
+		};
+		08605F3322042A50005FB487 /* BKTools */ = {
+			isa = PBXGroup;
+			children = (
+				08605F3422042B0F005FB487 /* BKDeviceTool.h */,
+				08605F3522042B0F005FB487 /* BKDeviceTool.m */,
+			);
+			path = BKTools;
+			sourceTree = "<group>";
+		};
+		08BD3F7F2233FE0A0058A538 /* TestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				08BD3F802233FE9F0058A538 /* DemoViewController.h */,
+				08BD3F812233FE9F0058A538 /* DemoViewController.m */,
+				08BD3F832234016A0058A538 /* DeviceToolViewController.h */,
+				08BD3F842234016A0058A538 /* DeviceToolViewController.m */,
+				08BD3F86223401980058A538 /* ShowTipViewController.h */,
+				08BD3F87223401980058A538 /* ShowTipViewController.m */,
+				08BD3F8F2234BB610058A538 /* TextFieldViewController.h */,
+				08BD3F902234BB610058A538 /* TextFieldViewController.m */,
+			);
+			path = TestDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +255,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08605F29220422AC005FB487 /* NSString+IsEmptyString.m in Sources */,
 				08605F0F22041CBA005FB487 /* ViewController.m in Sources */,
+				08BD3F8B2234AD6A0058A538 /* LHTextField.m in Sources */,
+				08605F2A220422AC005FB487 /* MBProgressHUD+MEShowHUD.m in Sources */,
+				08BD3F8E2234AEBB0058A538 /* LHTextFieldView.m in Sources */,
+				08BD3F822233FE9F0058A538 /* DemoViewController.m in Sources */,
 				08605F1A22041CBC005FB487 /* main.m in Sources */,
+				08BD3F852234016A0058A538 /* DeviceToolViewController.m in Sources */,
+				08605F3922042CA4005FB487 /* UIAlertController+MEShowAlert.m in Sources */,
+				08BD3F912234BB610058A538 /* TextFieldViewController.m in Sources */,
+				08BD3F88223401980058A538 /* ShowTipViewController.m in Sources */,
+				08605F3622042B0F005FB487 /* BKDeviceTool.m in Sources */,
 				08605F0C22041CBA005FB487 /* AppDelegate.m in Sources */,
+				08605F2F220424D7005FB487 /* UIStoryboard+CreateVC.m in Sources */,
+				08605F24220422A2005FB487 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = BarderKit/PrefixHeader.pch;
 				INFOPLIST_FILE = BarderKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = BarderKit/PrefixHeader.pch;
 				INFOPLIST_FILE = BarderKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
