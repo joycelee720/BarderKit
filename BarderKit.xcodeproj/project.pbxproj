@@ -121,6 +121,8 @@
 		08605F20220420C7005FB487 /* BKCategories */ = {
 			isa = PBXGroup;
 			children = (
+				08605F23220422A2005FB487 /* MBProgressHUD.h */,
+				08605F22220422A2005FB487 /* MBProgressHUD.m */,
 				08605F3722042CA4005FB487 /* UIAlertController+MEShowAlert.h */,
 				08605F3822042CA4005FB487 /* UIAlertController+MEShowAlert.m */,
 				08605F25220422AB005FB487 /* MBProgressHUD+MEShowHUD.h */,
@@ -136,8 +138,6 @@
 		08605F2122042258005FB487 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				08605F23220422A2005FB487 /* MBProgressHUD.h */,
-				08605F22220422A2005FB487 /* MBProgressHUD.m */,
 			);
 			path = ThirdParty;
 			sourceTree = "<group>";
