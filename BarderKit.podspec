@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BarderKit"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "BarderKit make your programming easier"
 
   # This description is used to generate tags and improve search results.
@@ -26,6 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
                       "BarderKit 0.0.1 has been updated now"
+                      "BarderKit 0.0.2 has been updated now"
                    DESC
 
   spec.homepage     = "https://github.com/joycelee720/BarderKit"

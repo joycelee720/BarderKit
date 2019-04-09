@@ -17,17 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    LHTextFieldView *textField1 = [LHTextFieldView textFieldViewWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, 45) withLHTextFieldViewType:LHTextFieldViewTypeNormal];
+    self.view.backgroundColor = UIColor.groupTableViewBackgroundColor;
+    
+    LHTextFieldView *textField1 = [LHTextFieldView textFieldViewWithFrame:CGRectMake(0, 0, ME_Screen_Width, 45) withLHTextFieldViewType:LHTextFieldViewTypeNormal];
     textField1.textField.placeholder = @"textField1";
     [textField1.textField addTextDidChangeHandler:^(LHTextField *textField) {
         NSLog(@"%@", textField.formatText);
     }];
     [self.view addSubview:textField1];
-    LHTextFieldView *textField2 = [LHTextFieldView textFieldViewWithFrame:CGRectMake(0, 45, UIScreen.mainScreen.bounds.size.width, 45) withLHTextFieldViewType:LHTextFieldViewTypeWords];
+    
+    LHTextFieldView *textField2 = [LHTextFieldView textFieldViewWithFrame:CGRectMake(0, textField1.bk_maxY, ME_Screen_Width, 45) withLHTextFieldViewType:LHTextFieldViewTypeWords];
     textField2.textField.placeholder = @"textField2";
     textField2.titleLabel.text = @"测试例子：";
     [self.view addSubview:textField2];
-    LHTextFieldView *textField3 = [LHTextFieldView textFieldViewWithFrame:CGRectMake(0, 90, UIScreen.mainScreen.bounds.size.width, 45) withLHTextFieldViewType:LHTextFieldViewTypeImage];
+    
+    LHTextFieldView *textField3 = [LHTextFieldView textFieldViewWithFrame:CGRectMake(0, textField2.bk_maxY, ME_Screen_Width, 45) withLHTextFieldViewType:LHTextFieldViewTypeImage];
     textField3.textField.placeholder = @"textField3";
     textField3.iconImageView.image = [UIImage imageNamed:@""];
     [self.view addSubview:textField3];

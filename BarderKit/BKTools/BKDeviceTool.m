@@ -26,4 +26,11 @@
     return [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleDisplayName"];
 }
 
++ (BOOL)isUserNotificationEnable{
+    BOOL isEnable = NO;
+    UIUserNotificationSettings *setting = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    isEnable = (UIUserNotificationTypeNone == setting.types) ? NO : YES;
+    return isEnable;
+}
+
 @end

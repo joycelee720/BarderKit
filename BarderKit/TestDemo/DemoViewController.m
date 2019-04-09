@@ -21,7 +21,7 @@
     [super viewDidLoad];
     NSArray *array = @[@{@"title": @"DeviceTool", @"class":@"DeviceToolViewController"},
                        @{@"title": @"ShowTip", @"class":@"ShowTipViewController"},
-                       @{@"title": @"TextField", @"class":@"TextFieldViewController"}];
+                       @{@"title": @"自定义Views", @"class":@"ViewsViewController"}];
     self.listArray = [NSMutableArray arrayWithArray:array];
     [self.view addSubview:self.tableView];
 }

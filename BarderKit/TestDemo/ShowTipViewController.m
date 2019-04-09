@@ -48,8 +48,8 @@
             [MBProgressHUD bk_hideHUD];
         });
     } else if ([title isEqualToString:@"显示Alert"]) {
-        UIAlertController *alert = [UIAlertController me_showAlertViewWithTitle:title withMessage:nil cancelTitle:nil sureTitle:nil sureAction:^{
-            [MBProgressHUD bk_showTipHUD:title];
+        UIAlertController *alert = [UIAlertController me_showAlertViewWithTitle:title withMessage:nil cancelTitle:nil sureTitle:nil sureAction:^(UIAlertController * _Nonnull meAlert) {
+            [MBProgressHUD bk_showTipHUD:meAlert.title];
         }];
         [self presentViewController:alert animated:YES completion:nil];
     }

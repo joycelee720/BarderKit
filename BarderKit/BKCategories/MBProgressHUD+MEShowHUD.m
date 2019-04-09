@@ -11,7 +11,12 @@
 @implementation MBProgressHUD (MEShowHUD)
 
 + (void)bk_showTipHUD:(NSString *)tip{
-    [MBProgressHUD bk_showTipHUD:tip onView:UIApplication.sharedApplication.keyWindow];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:UIApplication.sharedApplication.keyWindow animated:YES];
+        hud.mode = MBProgressHUDModeText;
+        hud.label.text = tip;
+        [hud hideAnimated:YES afterDelay:1.0];
+    });
 }
 
 + (void)bk_showTipHUD:(NSString *)tip onView:(UIView *)onView{
@@ -24,7 +29,11 @@
 }
 
 + (void)bk_showStatusHUD:(NSString *)tip{
-    [self bk_showStatusHUD:tip onView:UIApplication.sharedApplication.keyWindow];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:UIApplication.sharedApplication.keyWindow animated:YES];
+        hud.mode = MBProgressHUDModeIndeterminate;
+        hud.label.text = tip;
+    });
 }
 
 + (void)bk_showStatusHUD:(NSString *)tip onView:(UIView *)onView{
@@ -36,11 +45,15 @@
 }
 
 + (void)bk_hideHUD{
-    [MBProgressHUD bk_hideHUD:UIApplication.sharedApplication.keyWindow];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:UIApplication.sharedApplication.keyWindow animated:YES];
+    });
 }
 
 + (void)bk_hideHUD:(UIView *)onView{
-    [MBProgressHUD hideHUDForView:onView animated:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:onView animated:YES];
+    });
 }
 
 @end

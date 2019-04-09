@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSString *)bk_getBuild;
 + (NSString *)bk_getAppName;
 
++ (BOOL)isUserNotificationEnable;
+
 @end
 
 NS_ASSUME_NONNULL_END
