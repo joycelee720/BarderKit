@@ -114,6 +114,10 @@ Pod::Spec.new do |spec|
     views.source_files = "BarderKit/Views/*.{h,m}"
   end
 
+  spec.subspec 'BKControllers' do |controllers|
+    views.source_files = "BarderKit/Controller/*.{h,m}"
+  end
+
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
