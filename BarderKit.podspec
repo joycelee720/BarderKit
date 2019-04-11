@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "BarderKit"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "BarderKit make your programming easier"
 
   # This description is used to generate tags and improve search results.
@@ -27,6 +27,7 @@ Pod::Spec.new do |spec|
   spec.description  = <<-DESC
                       "BarderKit 0.0.1 has been updated now"
                       "BarderKit 0.0.2 has been updated now"
+                      "BarderKit 0.0.3 has been updated now"
                    DESC
 
   spec.homepage     = "https://github.com/joycelee720/BarderKit"
@@ -115,7 +116,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'BKControllers' do |controllers|
-    views.source_files = "BarderKit/Controller/*.{h,m}"
+    controllers.source_files = "BarderKit/Controller/*.{h,m}"
   end
 
   # spec.exclude_files = "Classes/Exclude"
