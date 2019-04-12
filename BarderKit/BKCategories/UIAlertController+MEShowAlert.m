@@ -93,7 +93,7 @@
 }
 
 + (UIAlertController *)me_showAlertViewWithTitle:(NSString *)title withMessage:(NSString *)message cancelTitle:(NSString *)cancel sureTitle:(NSString *)sure defaultText:(NSString *)defaultText textFieldConfig:(TextFieldConfig)configBlock cancelAction:(CancelAction)cancelBlock sureAction:(ReturnText)textBlock{
-    UIAlertController *alert = [UIAlertController me_showActionSheetViewWithTitle:title withMessage:message cancelTitle:cancel sureTitle:sure cancelAction:cancelBlock sureAction:^(UIAlertController * _Nonnull meAlert) {
+    UIAlertController *alert = [UIAlertController me_showAlertViewWithTitle:title withMessage:message cancelTitle:cancel sureTitle:sure cancelAction:cancelBlock sureAction:^(UIAlertController * _Nonnull meAlert) {
         UITextField *textField = meAlert.textFields.firstObject;
         if (textBlock) {
             textBlock(textField.text);

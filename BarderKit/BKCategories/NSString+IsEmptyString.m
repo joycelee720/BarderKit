@@ -23,4 +23,13 @@
     return YES;
 }
 
+- (NSString *)ys_transferDateStringWithFormatter:(NSString *)format toFormatter:(NSString *)toFormat{
+    NSDateFormatter *fromFormatter = [[NSDateFormatter alloc] init];
+    fromFormatter.dateFormat = format;
+    NSDate *date = [fromFormatter dateFromString:self];
+    NSDateFormatter *toFormatter = [[NSDateFormatter alloc] init];
+    toFormatter.dateFormat = toFormat;
+    return [toFormatter stringFromDate:date];
+}
+
 @end

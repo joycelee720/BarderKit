@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)rl_stringByTrim;
 - (BOOL)rl_isEmptyString;
 
+- (NSString *)ys_transferDateStringWithFormatter:(NSString *)format toFormatter:(NSString *)toFormat;
+
 @end
 
 NS_ASSUME_NONNULL_END
